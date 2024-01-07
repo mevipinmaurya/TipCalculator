@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-height: 80vh;
+    min-width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    /* border: 1px solid grey; */
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.input-section {
+    height: 60vh;
+    width: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.amount {
+    margin: 10px 0 10px 0;
+}
+
+.amount p {
+    font-size: 20px;
+}
+
+.amount input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    text-align: right;
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 5px;
+}
+
+.select-tip {
+    margin: 10px 0 10px 0;
+}
+
+.select-tip p {
+    font-size: 20px;
+}
+
+.select-tip button {
+    width: 30%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(21, 159, 245);
+    margin: 3px 3px 3px 0;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.select-tip button:hover {
+    background-color: rgb(51, 113, 51);
+}
+
+#selected-tip{
+    width: 30%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+    margin: 3px 3px 3px 0;
+    color: rgb(51, 113, 51);
+    border: 1px solid grey;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.bill-split {
+    margin: 10px 0 10px 0;
+}
+
+.bill-split p {
+    font-size: 20px;
+}
+
+.bill-split input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    text-align: right;
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 5px;
+}
+.cal-bill button{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    color: rgb(21, 159, 245);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid rgb(21, 159, 245);
+}
+
+.cal-bill button:hover{
+    color: rgb(51, 113, 51);
+    border: 2px solid rgb(51, 113, 51);
+    
+
+}
+
+.output-section {
+    width: 50%;
+    padding: 20px;
+    background-color: rgb(21, 159, 245);
+    color: white;
+    border-radius: 8px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tip-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+
+.total-tip-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.total-payable-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.reset-button button{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    color: rgb(21, 159, 245);
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="input-section">
+                <div class="amount">
+                    <p>Bill Amount (₹)</p>
+                    <input type="text" value="0.00">
+                </div>
+                <div class="select-tip">
+                    <p>Select Tip (%)</p>
+                    <button id="btn1">5</button>
+                    <button id="btn2">10</button>
+                    <button id="btn3">15</button>
+                    <button id="btn4">25</button>
+                    <button id="btn5">50</button>
+                    <button id="selected-tip">10</button>
+                </div>
+                <div class="bill-split">
+                    <p>Number of People</p>
+                    <input type="text" value="0">
+                </div>
+                <div class="cal-bill">
+                    <button id="calTip">Calculate Tip</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <div class="tip-amount">
+                    <div>
+                        <h3>Tip Amount</h3>
+                        <p>/ Person</p>
+                    </div>
+                    <div>
+                        <p id="tipPerPerson">0.00 ₹</p>
+                    </div>
+                </div>
+                <div class="total">
+                    <div>
+                        <h3>Total</h3>
+                        <p>/ Person</p>
+                    </div>
+                    <div>
+                        <p id="totalAmountPerPerson">0.00 ₹</p>
+                    </div>
+                </div>
+
+                <div class="total-tip-amount">
+                    <div>
+                        <h3>Total Tip. </h3>
+                    </div>
+                    <div>
+                        <p id="totalTipAmount">0.00 ₹</p>
+                    </div>
+                </div>
+
+                <div class="total-payable-amount">
+                    <div>
+                        <h3>Total Amount. </h3>
+                    </div>
+                    <div>
+                        <p id="totalPayableAmount">0.00 ₹</p>
+                    </div>
+                </div>
+                <div class="reset-button">
+                    <button id="reset">RESET</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
