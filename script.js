@@ -1,10 +1,6 @@
 const amt = document.querySelector(".amount input")
 const calTip = document.getElementById("calTip")
-const btn1 = document.getElementById("btn1")
-const btn2 = document.getElementById("btn2")
-const btn3 = document.getElementById("btn3")
-const btn4 = document.getElementById("btn4")
-const btn5 = document.getElementById("btn5")
+const btn = document.querySelectorAll(".buttons")
 const selTip = document.getElementById("selected-tip")
 const billSplit = document.querySelector(".bill-split input")
 const tipAmt = document.getElementById("tipPerPerson")
@@ -14,20 +10,11 @@ const totalPayableAmount = document.getElementById("totalPayableAmount")
 const resetBtn = document.getElementById("reset")
 
 
-btn1.addEventListener("click", () => {
-    selTip.innerText = btn1.innerText
-})
-btn2.addEventListener("click", () => {
-    selTip.innerText = btn2.innerText
-})
-btn3.addEventListener("click", () => {
-    selTip.innerText = btn3.innerText
-})
-btn4.addEventListener("click", () => {
-    selTip.innerText = btn4.innerText
-})
-btn5.addEventListener("click", () => {
-    selTip.innerText = btn5.innerText
+Array.from(btn).forEach((button)=>{
+    button.addEventListener("click",()=>{
+        // console.log(button.innerText)
+        selTip.innerText = button.innerText
+    })
 })
 
 
